@@ -127,11 +127,42 @@ h1 {
 }
 
 .picture-gauche:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
   animation: none;
 }
 
 .picture-droite:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
   animation: none;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+}
+
+.bubbles span {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background: #ff232d;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #f18c8c, 0 0 5px #ff232d, 0 0 5px #ff232d;
+  animation: plan 15s linear infinite;
+  animation-duration: calc(150s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #2b8dff;
+  box-shadow: 0 0 0 5px #8cacf1, 0 0 5px #2b8dff, 0 0 5px #2b8dff;
+}
+
+@keyframes plan {
+  0% {
+    transform: translateY(0vh) scale(0);
+  }
+  100% {
+    transform: translateY(-250vh) scale(0.3);
+  }
 }
