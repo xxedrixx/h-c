@@ -105,3 +105,13 @@ h1 {
     transform: rotate3d(0, 5, 1, 35deg);
   }
 }
+
+.picture-gauche:hover img {
+  transform: scale(1.1);
+  animation: none;
+}
+
+.picture-droite:hover img {
+  transform: scale(1.1);
+  animation: none;
+}
