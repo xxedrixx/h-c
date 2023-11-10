@@ -71,6 +71,17 @@ h1 {
   width: 600px;
   height: 600px;
   margin-top: 20px;
+  transform-style: preserve-3d;
+  animation: anim 4s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
 }
 
 .picture-droite {
@@ -82,4 +93,15 @@ h1 {
   width: 600px;
   height: 600px;
   margin-top: 20px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 5, 1, 35deg);
+  }
 }
