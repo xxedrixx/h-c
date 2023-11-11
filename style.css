@@ -84,17 +84,17 @@ h1 {
 
 .picture-gauche {
   float: left;
-  padding-left: 250px;
+  padding: 0 150px;
 }
 
 .text-gauche {
   float: left;
-  padding-left: 250px;
+  padding: 0 150px;
 }
 
 .picture-gauche img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   margin-top: 20px;
   transform-style: preserve-3d;
   animation: anim 4s linear infinite;
@@ -111,17 +111,17 @@ h1 {
 
 .text-droite {
   float: right;
-  padding-right: 250px;
+  padding: 0 150px;
 }
 
 .picture-droite {
   float: right;
-  padding-right: 250px;
+  padding: 0 150px;
 }
 
 .picture-droite img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   margin-top: 20px;
   transform-style: preserve-3d;
   animation: animate 4s linear infinite;
