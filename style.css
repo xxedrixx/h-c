@@ -63,6 +63,11 @@ h1 {
   padding: 8px 22px;
 }
 
+.contact:hover {
+  transition: all 0.6s ease;
+  transform: scale(1.05);
+}
+
 .banner {
   color: #fff;
   display: flex;
