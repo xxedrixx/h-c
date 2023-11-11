@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  cursor: none;
 }
 
 html,
 body {
   min-height: 100%;
+  min-width: 100%;
+  cursor: none;
 }
 
 h1 {
@@ -132,7 +133,7 @@ h1 {
     transform: rotate3d(0, 0, 0, 0deg);
   }
   50% {
-    transform: rotate3d(0, 5, 1, 35deg);
+    transform: rotate3d(0, 5, 1, 25deg);
   }
 }
 
@@ -187,4 +188,33 @@ h1 {
   left: 0;
   pointer-events: none;
   z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+@media (max-width: 1400px) {
+  html,
+  body {
+    cursor: default;
+  }
+  .circle {
+    display: none;
+  }
+  .row-1 {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .row-2 {
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+  }
+  .picture-droite img,
+  .picture-gauche img {
+    width: 200px;
+    height: 200px;
+  }
+  .picture-droite,
+  .picture-gauche,
+  .text-droite,
+  .text-gauche {
+    padding: 0 30px;
+  }
 }
