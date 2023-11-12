@@ -73,6 +73,9 @@ h1 {
   color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 
 .row-1,
@@ -81,6 +84,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   font-size: 2rem;
+  margin-bottom: 45px;
 }
 
 .picture-gauche {
