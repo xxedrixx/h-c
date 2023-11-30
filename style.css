@@ -195,6 +195,12 @@ h1 {
   z-index: 99999999; /* so that it stays on top of all other elements */
 }
 
+@media (max-width: 360px) {
+  .logo {
+    display: none;
+  }
+}
+
 @media (max-width: 1400px) {
   html,
   body {
