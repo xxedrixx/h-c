@@ -16,6 +16,7 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-weight: bold;
 }
 
 .container {
